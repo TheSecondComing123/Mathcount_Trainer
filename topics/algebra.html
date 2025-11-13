@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algebra - MathCounts Study Guide</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="../index.html" class="logo">MathCounts Study Guide</a>
+            <button class="menu-toggle">☰</button>
+            <ul class="nav-menu">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../index.html#topics">Topics</a></li>
+                <li><a href="../index.html#contests">Contest Formats</a></li>
+                <li><a href="../strategies/index.html">Strategies</a></li>
+                <li><a href="../practice/index.html">Practice</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="breadcrumb">
+            <a href="../index.html">Home</a> <span>→</span>
+            <a href="../index.html#topics">Topics</a> <span>→</span>
+            <span>Algebra</span>
+        </div>
+
+        <section class="content-section">
+            <h2>Algebra</h2>
+            <p>Algebra is one of the most important topics in MathCounts, appearing in approximately 25-30% of all competition problems. Mastering algebra is essential for success at all competition levels.</p>
+        </section>
+
+        <section class="content-section">
+            <h2>Core Algebraic Concepts</h2>
+
+            <h3>1. Solving Linear Equations</h3>
+            <p>Linear equations are the foundation of algebra. The goal is to isolate the variable using inverse operations.</p>
+
+            <div class="info-box tip">
+                <h4>Key Strategy</h4>
+                <p>Always perform the same operation on both sides of the equation to maintain equality.</p>
+            </div>
+
+            <div class="formula">
+                General form: ax + b = c → x = (c - b)/a
+            </div>
+
+            <div class="problem">
+                <div class="problem-header">
+                    <strong>Example 1:</strong>
+                    <span class="problem-difficulty difficulty-easy">Easy</span>
+                </div>
+                <div class="problem-question">
+                    Solve for x: 3x + 7 = 22
+                </div>
+                <div class="solution">
+                    <div class="solution-header">
+                        <span class="arrow">▶</span> Show Solution
+                    </div>
+                    <div class="solution-content hidden">
+                        <p><strong>Step 1:</strong> Subtract 7 from both sides</p>
+                        <p class="formula">3x + 7 - 7 = 22 - 7</p>
+                        <p class="formula">3x = 15</p>
+
+                        <p><strong>Step 2:</strong> Divide both sides by 3</p>
+                        <p class="formula">3x/3 = 15/3</p>
+                        <p class="formula">x = 5</p>
+
+                        <p><strong>Check:</strong> 3(5) + 7 = 15 + 7 = 22 ✓</p>
+                    </div>
+                </div>
+            </div>
+
+            <h3>2. Systems of Equations</h3>
+            <p>Systems involve solving for multiple variables simultaneously. Common methods include substitution and elimination.</p>
+
+            <div class="info-box note">
+                <h4>Two Main Methods</h4>
+                <ul>
+                    <li><strong>Substitution:</strong> Solve one equation for a variable, then substitute into the other</li>
+                    <li><strong>Elimination:</strong> Add or subtract equations to eliminate a variable</li>
+                </ul>
+            </div>
+
+            <div class="problem">
+                <div class="problem-header">
+                    <strong>Example 2:</strong>
+                    <span class="problem-difficulty difficulty-medium">Medium</span>
+                </div>
+                <div class="problem-question">
+                    Solve the system: 2x + y = 10 and x - y = 2
+                </div>
+                <div class="solution">
+                    <div class="solution-header">
+                        <span class="arrow">▶</span> Show Solution
+                    </div>
+                    <div class="solution-content hidden">
+                        <p><strong>Using Elimination Method:</strong></p>
+
+                        <p><strong>Step 1:</strong> Add the two equations to eliminate y</p>
+                        <p class="formula">2x + y = 10</p>
+                        <p class="formula">x - y = 2</p>
+                        <p class="formula">─────────────</p>
+                        <p class="formula">3x = 12</p>
+
+                        <p><strong>Step 2:</strong> Solve for x</p>
+                        <p class="formula">x = 4</p>
+
+                        <p><strong>Step 3:</strong> Substitute x = 4 into x - y = 2</p>
+                        <p class="formula">4 - y = 2</p>
+                        <p class="formula">y = 2</p>
+
+                        <p><strong>Answer:</strong> x = 4, y = 2</p>
+
+                        <p><strong>Check:</strong> 2(4) + 2 = 10 ✓ and 4 - 2 = 2 ✓</p>
+                    </div>
+                </div>
+            </div>
+
+            <h3>3. Quadratic Equations</h3>
+            <p>Quadratic equations have the form ax² + bx + c = 0 and can be solved using factoring, completing the square, or the quadratic formula.</p>
+
+            <div class="formula">
+                Quadratic Formula: x = [-b ± √(b² - 4ac)] / (2a)
+            </div>
+
+            <div class="info-box tip">
+                <h4>Factoring Strategy</h4>
+                <p>Try factoring first! It's often faster than using the quadratic formula for competition problems.</p>
+            </div>
+
+            <div class="problem">
+                <div class="problem-header">
+                    <strong>Example 3:</strong>
+                    <span class="problem-difficulty difficulty-medium">Medium</span>
+                </div>
+                <div class="problem-question">
+                    Solve for x: x² - 5x + 6 = 0
+                </div>
+                <div class="solution">
+                    <div class="solution-header">
+                        <span class="arrow">▶</span> Show Solution
+                    </div>
+                    <div class="solution-content hidden">
+                        <p><strong>Using Factoring:</strong></p>
+
+                        <p><strong>Step 1:</strong> Find two numbers that multiply to 6 and add to -5</p>
+                        <p>The numbers are -2 and -3</p>
+
+                        <p><strong>Step 2:</strong> Factor the quadratic</p>
+                        <p class="formula">x² - 5x + 6 = (x - 2)(x - 3) = 0</p>
+
+                        <p><strong>Step 3:</strong> Apply zero product property</p>
+                        <p class="formula">x - 2 = 0 or x - 3 = 0</p>
+
+                        <p><strong>Answer:</strong> x = 2 or x = 3</p>
+                    </div>
+                </div>
+            </div>
+
+            <h3>4. Polynomial Operations and Factoring</h3>
+            <p>Understanding how to add, subtract, multiply, and factor polynomials is crucial for MathCounts success.</p>
+
+            <h4>Common Factoring Patterns:</h4>
+            <ul class="styled-list">
+                <li><strong>Difference of Squares:</strong> a² - b² = (a + b)(a - b)</li>
+                <li><strong>Perfect Square Trinomial:</strong> a² + 2ab + b² = (a + b)²</li>
+                <li><strong>Perfect Square Trinomial:</strong> a² - 2ab + b² = (a - b)²</li>
+                <li><strong>Sum of Cubes:</strong> a³ + b³ = (a + b)(a² - ab + b²)</li>
+                <li><strong>Difference of Cubes:</strong> a³ - b³ = (a - b)(a² + ab + b²)</li>
+            </ul>
+
+            <div class="problem">
+                <div class="problem-header">
+                    <strong>Example 4:</strong>
+                    <span class="problem-difficulty difficulty-medium">Medium</span>
+                </div>
+                <div class="problem-question">
+                    Factor completely: 4x² - 25
+                </div>
+                <div class="solution">
+                    <div class="solution-header">
+                        <span class="arrow">▶</span> Show Solution
+                    </div>
+                    <div class="solution-content hidden">
+                        <p><strong>Recognize this as a difference of squares:</strong></p>
+
+                        <p><strong>Step 1:</strong> Identify a² and b²</p>
+                        <p class="formula">4x² = (2x)² and 25 = 5²</p>
+
+                        <p><strong>Step 2:</strong> Apply difference of squares formula</p>
+                        <p class="formula">4x² - 25 = (2x)² - 5² = (2x + 5)(2x - 5)</p>
+
+                        <p><strong>Answer:</strong> (2x + 5)(2x - 5)</p>
+                    </div>
+                </div>
+            </div>
+
+            <h3>5. Function Evaluation</h3>
+            <p>Functions represent relationships between variables. Be comfortable evaluating functions at specific values and working with function notation.</p>
+
+            <div class="problem">
+                <div class="problem-header">
+                    <strong>Example 5:</strong>
+                    <span class="problem-difficulty difficulty-easy">Easy</span>
+                </div>
+                <div class="problem-question">
+                    If f(x) = 2x² - 3x + 1, find f(3).
+                </div>
+                <div class="solution">
+                    <div class="solution-header">
+                        <span class="arrow">▶</span> Show Solution
+                    </div>
+                    <div class="solution-content hidden">
+                        <p><strong>Step 1:</strong> Substitute x = 3 into the function</p>
+                        <p class="formula">f(3) = 2(3)² - 3(3) + 1</p>
+
+                        <p><strong>Step 2:</strong> Evaluate the exponent first</p>
+                        <p class="formula">f(3) = 2(9) - 3(3) + 1</p>
+
+                        <p><strong>Step 3:</strong> Multiply</p>
+                        <p class="formula">f(3) = 18 - 9 + 1</p>
+
+                        <p><strong>Step 4:</strong> Add and subtract from left to right</p>
+                        <p class="formula">f(3) = 10</p>
+
+                        <p><strong>Answer:</strong> f(3) = 10</p>
+                    </div>
+                </div>
+            </div>
+
+            <h3>6. Inequalities</h3>
+            <p>Solving inequalities is similar to solving equations, but remember to flip the inequality sign when multiplying or dividing by a negative number.</p>
+
+            <div class="info-box warning">
+                <h4>Critical Rule</h4>
+                <p>When multiplying or dividing both sides by a negative number, reverse the inequality sign!</p>
+            </div>
+
+            <div class="problem">
+                <div class="problem-header">
+                    <strong>Example 6:</strong>
+                    <span class="problem-difficulty difficulty-easy">Easy</span>
+                </div>
+                <div class="problem-question">
+                    Solve for x: -3x + 5 > 14
+                </div>
+                <div class="solution">
+                    <div class="solution-header">
+                        <span class="arrow">▶</span> Show Solution
+                    </div>
+                    <div class="solution-content hidden">
+                        <p><strong>Step 1:</strong> Subtract 5 from both sides</p>
+                        <p class="formula">-3x + 5 - 5 > 14 - 5</p>
+                        <p class="formula">-3x > 9</p>
+
+                        <p><strong>Step 2:</strong> Divide by -3 and flip the inequality</p>
+                        <p class="formula">x < -3</p>
+
+                        <p><strong>Answer:</strong> x < -3</p>
+                    </div>
+                </div>
+            </div>
+
+            <h3>7. Exponent Rules</h3>
+            <p>Master these exponent rules for quick calculations:</p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Rule</th>
+                        <th>Formula</th>
+                        <th>Example</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Product Rule</td>
+                        <td>a<sup>m</sup> × a<sup>n</sup> = a<sup>m+n</sup></td>
+                        <td>x³ × x² = x⁵</td>
+                    </tr>
+                    <tr>
+                        <td>Quotient Rule</td>
+                        <td>a<sup>m</sup> / a<sup>n</sup> = a<sup>m-n</sup></td>
+                        <td>x⁵ / x² = x³</td>
+                    </tr>
+                    <tr>
+                        <td>Power Rule</td>
+                        <td>(a<sup>m</sup>)<sup>n</sup> = a<sup>mn</sup></td>
+                        <td>(x²)³ = x⁶</td>
+                    </tr>
+                    <tr>
+                        <td>Zero Exponent</td>
+                        <td>a⁰ = 1 (a ≠ 0)</td>
+                        <td>5⁰ = 1</td>
+                    </tr>
+                    <tr>
+                        <td>Negative Exponent</td>
+                        <td>a<sup>-n</sup> = 1/a<sup>n</sup></td>
+                        <td>x<sup>-2</sup> = 1/x²</td>
+                    </tr>
+                    <tr>
+                        <td>Product to Power</td>
+                        <td>(ab)<sup>n</sup> = a<sup>n</sup>b<sup>n</sup></td>
+                        <td>(2x)³ = 8x³</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="content-section">
+            <h2>Advanced Algebra Topics</h2>
+
+            <h3>Vieta's Formulas</h3>
+            <p>For a quadratic equation ax² + bx + c = 0 with roots r and s:</p>
+            <ul class="styled-list">
+                <li>Sum of roots: r + s = -b/a</li>
+                <li>Product of roots: r × s = c/a</li>
+            </ul>
+
+            <div class="problem">
+                <div class="problem-header">
+                    <strong>Example 7:</strong>
+                    <span class="problem-difficulty difficulty-hard">Hard</span>
+                </div>
+                <div class="problem-question">
+                    The roots of x² - 7x + 10 = 0 are r and s. Find r² + s².
+                </div>
+                <div class="solution">
+                    <div class="solution-header">
+                        <span class="arrow">▶</span> Show Solution
+                    </div>
+                    <div class="solution-content hidden">
+                        <p><strong>Using Vieta's Formulas:</strong></p>
+
+                        <p><strong>Step 1:</strong> Find r + s and rs</p>
+                        <p class="formula">r + s = -(-7)/1 = 7</p>
+                        <p class="formula">rs = 10/1 = 10</p>
+
+                        <p><strong>Step 2:</strong> Use the identity r² + s² = (r + s)² - 2rs</p>
+                        <p class="formula">r² + s² = 7² - 2(10)</p>
+                        <p class="formula">r² + s² = 49 - 20</p>
+                        <p class="formula">r² + s² = 29</p>
+
+                        <p><strong>Answer:</strong> 29</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2>MathCounts-Specific Tips for Algebra</h2>
+
+            <div class="card-grid">
+                <div class="info-box tip">
+                    <h4>Mental Math Shortcuts</h4>
+                    <ul>
+                        <li>Recognize common factorizations quickly</li>
+                        <li>Memorize perfect squares up to 25²</li>
+                        <li>Use difference of squares when possible</li>
+                        <li>Look for patterns before calculating</li>
+                    </ul>
+                </div>
+
+                <div class="info-box warning">
+                    <h4>Common Mistakes to Avoid</h4>
+                    <ul>
+                        <li>Forgetting to flip inequality signs with negatives</li>
+                        <li>Sign errors when distributing negatives</li>
+                        <li>Incorrect exponent arithmetic</li>
+                        <li>Not checking your answer</li>
+                    </ul>
+                </div>
+
+                <div class="info-box important">
+                    <h4>Time-Saving Techniques</h4>
+                    <ul>
+                        <li>Try factoring before using quadratic formula</li>
+                        <li>Use substitution for complex expressions</li>
+                        <li>Eliminate obviously wrong answers first</li>
+                        <li>Estimate answer ranges before calculating</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2>Practice Problems</h2>
+            <p>For more algebra practice problems organized by difficulty, visit our <a href="../practice/index.html">Practice Problems</a> section.</p>
+            <a href="../practice/index.html" class="btn btn-success">Go to Practice Problems</a>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 MathCounts Study Guide</p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

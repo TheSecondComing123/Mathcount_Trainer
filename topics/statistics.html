@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Statistics - MathCounts Study Guide</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="../index.html" class="logo">MathCounts Study Guide</a>
+            <button class="menu-toggle">☰</button>
+            <ul class="nav-menu">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../index.html#topics">Topics</a></li>
+                <li><a href="../index.html#contests">Contest Formats</a></li>
+                <li><a href="../strategies/index.html">Strategies</a></li>
+                <li><a href="../practice/index.html">Practice</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="breadcrumb">
+            <a href="../index.html">Home</a> <span>→</span>
+            <a href="../index.html#topics">Topics</a> <span>→</span>
+            <span>Statistics</span>
+        </div>
+
+        <section class="content-section">
+            <h2>Statistics</h2>
+            <p>Statistics appears in about 10-15% of MathCounts problems, focusing on data analysis, measures of central tendency, and interpretation of graphs and charts.</p>
+        </section>
+
+        <section class="content-section">
+            <h2>Measures of Central Tendency</h2>
+
+            <h3>Mean (Average)</h3>
+            <p>The sum of all values divided by the number of values.</p>
+            <div class="formula">
+                Mean = (Sum of all values) / (Number of values)
+            </div>
+
+            <div class="problem">
+                <div class="problem-header">
+                    <strong>Example 1:</strong>
+                    <span class="problem-difficulty difficulty-easy">Easy</span>
+                </div>
+                <div class="problem-question">
+                    Find the mean of the data set: 12, 15, 18, 22, 28
+                </div>
+                <div class="solution">
+                    <div class="solution-header">
+                        <span class="arrow">▶</span> Show Solution
+                    </div>
+                    <div class="solution-content hidden">
+                        <p><strong>Step 1:</strong> Sum all values</p>
+                        <p class="formula">12 + 15 + 18 + 22 + 28 = 95</p>
+
+                        <p><strong>Step 2:</strong> Divide by number of values</p>
+                        <p class="formula">Mean = 95 / 5 = 19</p>
+
+                        <p><strong>Answer:</strong> 19</p>
+                    </div>
+                </div>
+            </div>
+
+            <h3>Median</h3>
+            <p>The middle value when data is arranged in order. If there's an even number of values, it's the average of the two middle values.</p>
+
+            <div class="problem">
+                <div class="problem-header">
+                    <strong>Example 2:</strong>
+                    <span class="problem-difficulty difficulty-easy">Easy</span>
+                </div>
+                <div class="problem-question">
+                    Find the median of: 7, 3, 9, 12, 5, 8, 11
+                </div>
+                <div class="solution">
+                    <div class="solution-header">
+                        <span class="arrow">▶</span> Show Solution
+                    </div>
+                    <div class="solution-content hidden">
+                        <p><strong>Step 1:</strong> Arrange in order</p>
+                        <p class="formula">3, 5, 7, 8, 9, 11, 12</p>
+
+                        <p><strong>Step 2:</strong> Find middle value</p>
+                        <p>7 values → middle is the 4th value</p>
+                        <p class="formula">Median = 8</p>
+
+                        <p><strong>Answer:</strong> 8</p>
+                    </div>
+                </div>
+            </div>
+
+            <h3>Mode</h3>
+            <p>The value that appears most frequently in the data set. There can be no mode, one mode, or multiple modes.</p>
+
+            <div class="problem">
+                <div class="problem-header">
+                    <strong>Example 3:</strong>
+                    <span class="problem-difficulty difficulty-easy">Easy</span>
+                </div>
+                <div class="problem-question">
+                    Find the mode of: 4, 7, 9, 7, 12, 7, 15, 9
+                </div>
+                <div class="solution">
+                    <div class="solution-header">
+                        <span class="arrow">▶</span> Show Solution
+                    </div>
+                    <div class="solution-content hidden">
+                        <p><strong>Count frequency of each value:</strong></p>
+                        <p class="formula">4: appears 1 time</p>
+                        <p class="formula">7: appears 3 times</p>
+                        <p class="formula">9: appears 2 times</p>
+                        <p class="formula">12: appears 1 time</p>
+                        <p class="formula">15: appears 1 time</p>
+
+                        <p><strong>Answer:</strong> Mode = 7 (appears most frequently)</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2>Measures of Spread</h2>
+
+            <h3>Range</h3>
+            <p>The difference between the maximum and minimum values.</p>
+            <div class="formula">
+                Range = Maximum value - Minimum value
+            </div>
+
+            <h3>Interquartile Range (IQR)</h3>
+            <p>The range of the middle 50% of the data.</p>
+            <ul class="styled-list">
+                <li><strong>Q1 (First Quartile):</strong> Median of the lower half</li>
+                <li><strong>Q2 (Second Quartile):</strong> Median of entire data set</li>
+                <li><strong>Q3 (Third Quartile):</strong> Median of the upper half</li>
+                <li><strong>IQR:</strong> Q3 - Q1</li>
+            </ul>
+
+            <div class="problem">
+                <div class="problem-header">
+                    <strong>Example 4:</strong>
+                    <span class="problem-difficulty difficulty-medium">Medium</span>
+                </div>
+                <div class="problem-question">
+                    Find the range and IQR of: 2, 5, 7, 9, 12, 15, 18, 22, 25
+                </div>
+                <div class="solution">
+                    <div class="solution-header">
+                        <span class="arrow">▶</span> Show Solution
+                    </div>
+                    <div class="solution-content hidden">
+                        <p><strong>Finding Range:</strong></p>
+                        <p class="formula">Range = 25 - 2 = 23</p>
+
+                        <p><strong>Finding IQR:</strong></p>
+                        <p><strong>Step 1:</strong> Find Q2 (median of all 9 values)</p>
+                        <p class="formula">Q2 = 12 (5th value)</p>
+
+                        <p><strong>Step 2:</strong> Find Q1 (median of lower half: 2, 5, 7, 9)</p>
+                        <p class="formula">Q1 = (5 + 7)/2 = 6</p>
+
+                        <p><strong>Step 3:</strong> Find Q3 (median of upper half: 15, 18, 22, 25)</p>
+                        <p class="formula">Q3 = (18 + 22)/2 = 20</p>
+
+                        <p><strong>Step 4:</strong> Calculate IQR</p>
+                        <p class="formula">IQR = Q3 - Q1 = 20 - 6 = 14</p>
+
+                        <p><strong>Answer:</strong> Range = 23, IQR = 14</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2>Working with Averages</h2>
+
+            <h3>Finding Missing Values</h3>
+
+            <div class="problem">
+                <div class="problem-header">
+                    <strong>Example 5:</strong>
+                    <span class="problem-difficulty difficulty-medium">Medium</span>
+                </div>
+                <div class="problem-question">
+                    The mean of four numbers is 20. Three of the numbers are 15, 18, and 22. What is the fourth number?
+                </div>
+                <div class="solution">
+                    <div class="solution-header">
+                        <span class="arrow">▶</span> Show Solution
+                    </div>
+                    <div class="solution-content hidden">
+                        <p><strong>Step 1:</strong> Use the mean formula</p>
+                        <p class="formula">Mean = (Sum of values) / 4</p>
+                        <p class="formula">20 = (15 + 18 + 22 + x) / 4</p>
+
+                        <p><strong>Step 2:</strong> Solve for x</p>
+                        <p class="formula">80 = 55 + x</p>
+                        <p class="formula">x = 25</p>
+
+                        <p><strong>Answer:</strong> The fourth number is 25</p>
+                    </div>
+                </div>
+            </div>
+
+            <h3>Weighted Averages</h3>
+            <p>When values have different weights or frequencies:</p>
+            <div class="formula">
+                Weighted Mean = Σ(value × weight) / Σ(weights)
+            </div>
+
+            <div class="problem">
+                <div class="problem-header">
+                    <strong>Example 6:</strong>
+                    <span class="problem-difficulty difficulty-medium">Medium</span>
+                </div>
+                <div class="problem-question">
+                    A student's grade is determined by: Tests (60%), Homework (25%), and Final Exam (15%). If the test average is 85, homework average is 92, and final exam score is 88, what is the final grade?
+                </div>
+                <div class="solution">
+                    <div class="solution-header">
+                        <span class="arrow">▶</span> Show Solution
+                    </div>
+                    <div class="solution-content hidden">
+                        <p><strong>Apply weighted average formula:</strong></p>
+
+                        <p><strong>Step 1:</strong> Multiply each component by its weight</p>
+                        <p class="formula">Tests: 85 × 0.60 = 51</p>
+                        <p class="formula">Homework: 92 × 0.25 = 23</p>
+                        <p class="formula">Final: 88 × 0.15 = 13.2</p>
+
+                        <p><strong>Step 2:</strong> Sum the weighted values</p>
+                        <p class="formula">Final Grade = 51 + 23 + 13.2 = 87.2</p>
+
+                        <p><strong>Answer:</strong> 87.2</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2>Data Interpretation</h2>
+
+            <h3>Reading Tables and Charts</h3>
+            <p>MathCounts frequently tests your ability to extract information from visual data representations.</p>
+
+            <div class="info-box tip">
+                <h4>Chart Reading Tips</h4>
+                <ul>
+                    <li>Always read axis labels carefully</li>
+                    <li>Check the scale (intervals between marks)</li>
+                    <li>Look for units of measurement</li>
+                    <li>Read titles and legends</li>
+                </ul>
+            </div>
+
+            <h3>Common Graph Types</h3>
+            <ul class="styled-list">
+                <li><strong>Bar Graph:</strong> Compares different categories</li>
+                <li><strong>Line Graph:</strong> Shows changes over time</li>
+                <li><strong>Pie Chart:</strong> Shows parts of a whole (percentages)</li>
+                <li><strong>Scatter Plot:</strong> Shows relationship between two variables</li>
+                <li><strong>Histogram:</strong> Shows frequency distribution of data</li>
+            </ul>
+        </section>
+
+        <section class="content-section">
+            <h2>Box-and-Whisker Plots</h2>
+
+            <p>Box plots display the five-number summary of a data set:</p>
+            <ul class="styled-list">
+                <li>Minimum</li>
+                <li>Q1 (First Quartile)</li>
+                <li>Q2 (Median)</li>
+                <li>Q3 (Third Quartile)</li>
+                <li>Maximum</li>
+            </ul>
+
+            <div class="info-box note">
+                <h4>Box Plot Components</h4>
+                <ul>
+                    <li><strong>Box:</strong> Extends from Q1 to Q3 (contains middle 50% of data)</li>
+                    <li><strong>Line in Box:</strong> Represents the median (Q2)</li>
+                    <li><strong>Whiskers:</strong> Extend to minimum and maximum values</li>
+                    <li><strong>Width of Box:</strong> IQR (Q3 - Q1)</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2>Advanced Statistical Concepts</h2>
+
+            <h3>Outliers</h3>
+            <p>Values that are significantly different from other values in the data set.</p>
+            <p>A common rule: A value is an outlier if:</p>
+            <ul class="styled-list">
+                <li>It's less than Q1 - 1.5 × IQR, or</li>
+                <li>It's greater than Q3 + 1.5 × IQR</li>
+            </ul>
+
+            <h3>Mean vs Median</h3>
+            <div class="card-grid">
+                <div class="info-box note">
+                    <h4>When to Use Mean</h4>
+                    <ul>
+                        <li>Data is relatively symmetric</li>
+                        <li>No extreme outliers</li>
+                        <li>Want to use all data values</li>
+                    </ul>
+                </div>
+
+                <div class="info-box note">
+                    <h4>When to Use Median</h4>
+                    <ul>
+                        <li>Data has outliers</li>
+                        <li>Data is skewed</li>
+                        <li>Want resistant measure</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2>Sample Problems</h2>
+
+            <div class="problem">
+                <div class="problem-header">
+                    <strong>Example 7:</strong>
+                    <span class="problem-difficulty difficulty-hard">Hard</span>
+                </div>
+                <div class="problem-question">
+                    The mean of 10 numbers is 50. If one number (60) is removed, what is the mean of the remaining 9 numbers?
+                </div>
+                <div class="solution">
+                    <div class="solution-header">
+                        <span class="arrow">▶</span> Show Solution
+                    </div>
+                    <div class="solution-content hidden">
+                        <p><strong>Step 1:</strong> Find sum of original 10 numbers</p>
+                        <p class="formula">Mean = Sum / Count</p>
+                        <p class="formula">50 = Sum / 10</p>
+                        <p class="formula">Sum = 500</p>
+
+                        <p><strong>Step 2:</strong> Subtract the removed number</p>
+                        <p class="formula">New sum = 500 - 60 = 440</p>
+
+                        <p><strong>Step 3:</strong> Calculate new mean</p>
+                        <p class="formula">New mean = 440 / 9 ≈ 48.89</p>
+
+                        <p><strong>Answer:</strong> 440/9 or approximately 48.89</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="problem">
+                <div class="problem-header">
+                    <strong>Example 8:</strong>
+                    <span class="problem-difficulty difficulty-medium">Medium</span>
+                </div>
+                <div class="problem-question">
+                    The median of 5 consecutive integers is 12. What is their sum?
+                </div>
+                <div class="solution">
+                    <div class="solution-header">
+                        <span class="arrow">▶</span> Show Solution
+                    </div>
+                    <div class="solution-content hidden">
+                        <p><strong>Step 1:</strong> Identify the 5 consecutive integers</p>
+                        <p>With 5 numbers, median is the middle (3rd) value</p>
+                        <p class="formula">The 5 integers are: 10, 11, 12, 13, 14</p>
+
+                        <p><strong>Step 2:</strong> Sum them</p>
+                        <p class="formula">10 + 11 + 12 + 13 + 14 = 60</p>
+
+                        <p><strong>Shortcut:</strong> Sum = median × count = 12 × 5 = 60</p>
+
+                        <p><strong>Answer:</strong> 60</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2>MathCounts-Specific Tips</h2>
+
+            <div class="card-grid">
+                <div class="info-box tip">
+                    <h4>Quick Strategies</h4>
+                    <ul>
+                        <li>Always arrange data in order first</li>
+                        <li>Use sum formulas to work backwards</li>
+                        <li>Check if data is consecutive/arithmetic</li>
+                        <li>Look for patterns before calculating</li>
+                    </ul>
+                </div>
+
+                <div class="info-box important">
+                    <h4>Key Formulas</h4>
+                    <ul>
+                        <li>Mean = Sum / Count</li>
+                        <li>Range = Max - Min</li>
+                        <li>IQR = Q3 - Q1</li>
+                        <li>Sum = Mean × Count</li>
+                    </ul>
+                </div>
+
+                <div class="info-box warning">
+                    <h4>Common Mistakes</h4>
+                    <ul>
+                        <li>Forgetting to order data before finding median</li>
+                        <li>Confusing mean, median, and mode</li>
+                        <li>Not averaging the two middle values (even count)</li>
+                        <li>Misreading graph scales</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2>Practice Problems</h2>
+            <p>For more statistics practice problems organized by difficulty, visit our <a href="../practice/index.html">Practice Problems</a> section.</p>
+            <a href="../practice/index.html" class="btn btn-success">Go to Practice Problems</a>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 MathCounts Study Guide</p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
