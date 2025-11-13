@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counting & Probability - MathCounts Study Guide</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="../index.html" class="logo">MathCounts Study Guide</a>
+            <button class="menu-toggle">☰</button>
+            <ul class="nav-menu">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../index.html#topics">Topics</a></li>
+                <li><a href="../index.html#contests">Contest Formats</a></li>
+                <li><a href="../strategies/index.html">Strategies</a></li>
+                <li><a href="../practice/index.html">Practice</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="breadcrumb">
+            <a href="../index.html">Home</a> <span>→</span>
+            <a href="../index.html#topics">Topics</a> <span>→</span>
+            <span>Counting & Probability</span>
+        </div>
+
+        <section class="content-section">
+            <h2>Counting & Probability</h2>
+            <p>Counting and probability problems appear in 15-20% of MathCounts questions. These topics test your logical thinking, systematic counting, and understanding of random events.</p>
+        </section>
+
+        <section class="content-section">
+            <h2>Fundamental Counting Principle</h2>
+
+            <div class="formula">
+                If event A can occur in m ways and event B can occur in n ways, then both events can occur in m × n ways.
+            </div>
+
+            <div class="problem">
+                <div class="problem-header">
+                    <strong>Example 1:</strong>
+                    <span class="problem-difficulty difficulty-easy">Easy</span>
+                </div>
+                <div class="problem-question">
+                    A restaurant offers 4 types of sandwiches and 3 types of drinks. How many different meal combinations are possible?
+                </div>
+                <div class="solution">
+                    <div class="solution-header">
+                        <span class="arrow">▶</span> Show Solution
+                    </div>
+                    <div class="solution-content hidden">
+                        <p><strong>Apply the Fundamental Counting Principle:</strong></p>
+
+                        <p><strong>Step 1:</strong> Identify independent choices</p>
+                        <p class="formula">Sandwiches: 4 choices</p>
+                        <p class="formula">Drinks: 3 choices</p>
+
+                        <p><strong>Step 2:</strong> Multiply the number of choices</p>
+                        <p class="formula">Total combinations = 4 × 3 = 12</p>
+
+                        <p><strong>Answer:</strong> 12 different meal combinations</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2>Permutations</h2>
+
+            <p>Permutations count arrangements where <strong>order matters</strong>.</p>
+
+            <h3>Permutation Formula</h3>
+            <div class="formula">
+                P(n, r) = n!/(n-r)!
+            </div>
+            <p>This represents the number of ways to arrange r objects from n total objects.</p>
+
+            <h3>Factorial Notation</h3>
+            <div class="formula">
+                n! = n × (n-1) × (n-2) × ... × 2 × 1
+            </div>
+            <p>Special case: 0! = 1</p>
+
+            <div class="info-box tip">
+                <h4>Quick Factorials</h4>
+                <ul>
+                    <li>1! = 1</li>
+                    <li>2! = 2</li>
+                    <li>3! = 6</li>
+                    <li>4! = 24</li>
+                    <li>5! = 120</li>
+                    <li>6! = 720</li>
+                    <li>7! = 5,040</li>
+                    <li>8! = 40,320</li>
+                </ul>
+            </div>
+
+            <div class="problem">
+                <div class="problem-header">
+                    <strong>Example 2:</strong>
+                    <span class="problem-difficulty difficulty-medium">Medium</span>
+                </div>
+                <div class="problem-question">
+                    How many ways can 5 students be arranged in a row for a photo?
+                </div>
+                <div class="solution">
+                    <div class="solution-header">
+                        <span class="arrow">▶</span> Show Solution
+                    </div>
+                    <div class="solution-content hidden">
+                        <p><strong>This is a permutation problem (order matters):</strong></p>
+
+                        <p><strong>Step 1:</strong> Recognize we're arranging all 5 students</p>
+                        <p class="formula">P(5, 5) = 5!</p>
+
+                        <p><strong>Step 2:</strong> Calculate 5!</p>
+                        <p class="formula">5! = 5 × 4 × 3 × 2 × 1 = 120</p>
+
+                        <p><strong>Answer:</strong> 120 different arrangements</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="problem">
+                <div class="problem-header">
+                    <strong>Example 3:</strong>
+                    <span class="problem-difficulty difficulty-medium">Medium</span>
+                </div>
+                <div class="problem-question">
+                    How many 3-digit numbers can be formed using the digits 1, 2, 3, 4, 5 without repetition?
+                </div>
+                <div class="solution">
+                    <div class="solution-header">
+                        <span class="arrow">▶</span> Show Solution
+                    </div>
+                    <div class="solution-content hidden">
+                        <p><strong>Choosing 3 digits from 5, order matters:</strong></p>
+
+                        <p><strong>Step 1:</strong> Use permutation formula</p>
+                        <p class="formula">P(5, 3) = 5!/(5-3)! = 5!/2!</p>
+
+                        <p><strong>Step 2:</strong> Calculate</p>
+                        <p class="formula">P(5, 3) = (5 × 4 × 3 × 2 × 1)/(2 × 1)</p>
+                        <p class="formula">= 120/2 = 60</p>
+
+                        <p><strong>Alternative: Counting Principle</strong></p>
+                        <p class="formula">First digit: 5 choices</p>
+                        <p class="formula">Second digit: 4 choices</p>
+                        <p class="formula">Third digit: 3 choices</p>
+                        <p class="formula">Total = 5 × 4 × 3 = 60</p>
+
+                        <p><strong>Answer:</strong> 60 three-digit numbers</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2>Combinations</h2>
+
+            <p>Combinations count selections where <strong>order does NOT matter</strong>.</p>
+
+            <h3>Combination Formula</h3>
+            <div class="formula">
+                C(n, r) = n!/[r!(n-r)!]
+            </div>
+            <p>Also written as <span class="math-inline">nCr</span> or <span class="math-inline">(n choose r)</span>.</p>
+
+            <div class="info-box important">
+                <h4>Permutation vs Combination</h4>
+                <ul>
+                    <li><strong>Permutation:</strong> Order matters (arranging, ranking, sequencing)</li>
+                    <li><strong>Combination:</strong> Order doesn't matter (selecting, choosing, grouping)</li>
+                </ul>
+            </div>
+
+            <div class="problem">
+                <div class="problem-header">
+                    <strong>Example 4:</strong>
+                    <span class="problem-difficulty difficulty-medium">Medium</span>
+                </div>
+                <div class="problem-question">
+                    A pizza shop offers 8 toppings. How many different 3-topping pizzas can be made?
+                </div>
+                <div class="solution">
+                    <div class="solution-header">
+                        <span class="arrow">▶</span> Show Solution
+                    </div>
+                    <div class="solution-content hidden">
+                        <p><strong>This is a combination (order doesn't matter):</strong></p>
+
+                        <p><strong>Step 1:</strong> Apply combination formula</p>
+                        <p class="formula">C(8, 3) = 8!/[3!(8-3)!] = 8!/(3!5!)</p>
+
+                        <p><strong>Step 2:</strong> Simplify</p>
+                        <p class="formula">C(8, 3) = (8 × 7 × 6)/(3 × 2 × 1)</p>
+                        <p class="formula">= 336/6 = 56</p>
+
+                        <p><strong>Answer:</strong> 56 different pizzas</p>
+                    </div>
+                </div>
+            </div>
+
+            <h3>Useful Combination Properties</h3>
+            <ul class="styled-list">
+                <li>C(n, 0) = 1 (one way to choose nothing)</li>
+                <li>C(n, n) = 1 (one way to choose everything)</li>
+                <li>C(n, r) = C(n, n-r) (symmetry property)</li>
+                <li>C(n, 1) = n (n ways to choose 1 item)</li>
+            </ul>
+        </section>
+
+        <section class="content-section">
+            <h2>Basic Probability</h2>
+
+            <h3>Probability Definition</h3>
+            <div class="formula">
+                P(event) = (Number of favorable outcomes)/(Total number of possible outcomes)
+            </div>
+
+            <h3>Probability Rules</h3>
+            <ul class="styled-list">
+                <li>Probability ranges from 0 to 1 (or 0% to 100%)</li>
+                <li>P(certain event) = 1</li>
+                <li>P(impossible event) = 0</li>
+                <li>P(not A) = 1 - P(A)</li>
+            </ul>
+
+            <div class="problem">
+                <div class="problem-header">
+                    <strong>Example 5:</strong>
+                    <span class="problem-difficulty difficulty-easy">Easy</span>
+                </div>
+                <div class="problem-question">
+                    What is the probability of rolling a number greater than 4 on a standard die?
+                </div>
+                <div class="solution">
+                    <div class="solution-header">
+                        <span class="arrow">▶</span> Show Solution
+                    </div>
+                    <div class="solution-content hidden">
+                        <p><strong>Step 1:</strong> Identify favorable outcomes</p>
+                        <p>Numbers greater than 4: {5, 6}</p>
+                        <p class="formula">Favorable outcomes = 2</p>
+
+                        <p><strong>Step 2:</strong> Identify total outcomes</p>
+                        <p class="formula">Total outcomes = 6 (numbers 1-6)</p>
+
+                        <p><strong>Step 3:</strong> Calculate probability</p>
+                        <p class="formula">P(>4) = 2/6 = 1/3</p>
+
+                        <p><strong>Answer:</strong> 1/3 or approximately 33.3%</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2>Compound Probability</h2>
+
+            <h3>Independent Events</h3>
+            <p>Events are independent if the occurrence of one doesn't affect the other.</p>
+            <div class="formula">
+                P(A and B) = P(A) × P(B)
+            </div>
+
+            <div class="problem">
+                <div class="problem-header">
+                    <strong>Example 6:</strong>
+                    <span class="problem-difficulty difficulty-medium">Medium</span>
+                </div>
+                <div class="problem-question">
+                    What is the probability of flipping a coin twice and getting heads both times?
+                </div>
+                <div class="solution">
+                    <div class="solution-header">
+                        <span class="arrow">▶</span> Show Solution
+                    </div>
+                    <div class="solution-content hidden">
+                        <p><strong>These are independent events:</strong></p>
+
+                        <p><strong>Step 1:</strong> Find probability of each event</p>
+                        <p class="formula">P(heads on first flip) = 1/2</p>
+                        <p class="formula">P(heads on second flip) = 1/2</p>
+
+                        <p><strong>Step 2:</strong> Multiply for independent events</p>
+                        <p class="formula">P(both heads) = 1/2 × 1/2 = 1/4</p>
+
+                        <p><strong>Answer:</strong> 1/4 or 25%</p>
+                    </div>
+                </div>
+            </div>
+
+            <h3>Mutually Exclusive Events</h3>
+            <p>Events that cannot occur simultaneously.</p>
+            <div class="formula">
+                P(A or B) = P(A) + P(B)
+            </div>
+
+            <h3>General Addition Rule</h3>
+            <p>For any two events:</p>
+            <div class="formula">
+                P(A or B) = P(A) + P(B) - P(A and B)
+            </div>
+
+            <div class="problem">
+                <div class="problem-header">
+                    <strong>Example 7:</strong>
+                    <span class="problem-difficulty difficulty-medium">Medium</span>
+                </div>
+                <div class="problem-question">
+                    A bag contains 3 red marbles, 4 blue marbles, and 5 green marbles. What is the probability of drawing a red or blue marble?
+                </div>
+                <div class="solution">
+                    <div class="solution-header">
+                        <span class="arrow">▶</span> Show Solution
+                    </div>
+                    <div class="solution-content hidden">
+                        <p><strong>These are mutually exclusive events:</strong></p>
+
+                        <p><strong>Step 1:</strong> Find individual probabilities</p>
+                        <p class="formula">Total marbles = 3 + 4 + 5 = 12</p>
+                        <p class="formula">P(red) = 3/12 = 1/4</p>
+                        <p class="formula">P(blue) = 4/12 = 1/3</p>
+
+                        <p><strong>Step 2:</strong> Add probabilities (mutually exclusive)</p>
+                        <p class="formula">P(red or blue) = 1/4 + 1/3</p>
+                        <p class="formula">= 3/12 + 4/12 = 7/12</p>
+
+                        <p><strong>Answer:</strong> 7/12</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2>Dependent Events and Conditional Probability</h2>
+
+            <h3>Dependent Events</h3>
+            <p>When the first event affects the probability of the second event:</p>
+            <div class="formula">
+                P(A and B) = P(A) × P(B|A)
+            </div>
+            <p>where P(B|A) is the probability of B given that A has occurred.</p>
+
+            <div class="problem">
+                <div class="problem-header">
+                    <strong>Example 8:</strong>
+                    <span class="problem-difficulty difficulty-hard">Hard</span>
+                </div>
+                <div class="problem-question">
+                    A box contains 5 red balls and 3 blue balls. If two balls are drawn without replacement, what is the probability that both are red?
+                </div>
+                <div class="solution">
+                    <div class="solution-header">
+                        <span class="arrow">▶</span> Show Solution
+                    </div>
+                    <div class="solution-content hidden">
+                        <p><strong>Without replacement makes these dependent events:</strong></p>
+
+                        <p><strong>Step 1:</strong> Probability of first red ball</p>
+                        <p class="formula">P(first red) = 5/8</p>
+
+                        <p><strong>Step 2:</strong> Probability of second red ball (given first was red)</p>
+                        <p>After removing one red ball: 4 red, 3 blue remain</p>
+                        <p class="formula">P(second red | first red) = 4/7</p>
+
+                        <p><strong>Step 3:</strong> Multiply probabilities</p>
+                        <p class="formula">P(both red) = 5/8 × 4/7 = 20/56 = 5/14</p>
+
+                        <p><strong>Answer:</strong> 5/14</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2>Expected Value</h2>
+
+            <p>Expected value is the average outcome of an experiment if repeated many times.</p>
+
+            <div class="formula">
+                E(X) = Σ [value × probability]
+            </div>
+
+            <div class="problem">
+                <div class="problem-header">
+                    <strong>Example 9:</strong>
+                    <span class="problem-difficulty difficulty-medium">Medium</span>
+                </div>
+                <div class="problem-question">
+                    A game costs $2 to play. You roll a die and win $5 if you roll a 6, otherwise you win nothing. What is the expected value of playing this game?
+                </div>
+                <div class="solution">
+                    <div class="solution-header">
+                        <span class="arrow">▶</span> Show Solution
+                    </div>
+                    <div class="solution-content hidden">
+                        <p><strong>Step 1:</strong> Identify outcomes and probabilities</p>
+                        <p class="formula">Win $5: probability = 1/6</p>
+                        <p class="formula">Win $0: probability = 5/6</p>
+
+                        <p><strong>Step 2:</strong> Calculate expected winnings</p>
+                        <p class="formula">E(winnings) = 5 × (1/6) + 0 × (5/6)</p>
+                        <p class="formula">= 5/6 ≈ $0.83</p>
+
+                        <p><strong>Step 3:</strong> Subtract cost to play</p>
+                        <p class="formula">Expected value = 5/6 - 2</p>
+                        <p class="formula">= 5/6 - 12/6 = -7/6 ≈ -$1.17</p>
+
+                        <p><strong>Answer:</strong> Expected value is -$1.17 (you expect to lose about $1.17 per game)</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2>Advanced Counting Techniques</h2>
+
+            <h3>Casework</h3>
+            <p>Breaking a problem into non-overlapping cases and summing the results.</p>
+
+            <h3>Complementary Counting</h3>
+            <p>Sometimes it's easier to count what you DON'T want, then subtract from the total.</p>
+            <div class="formula">
+                Count of desired outcomes = Total - Count of unwanted outcomes
+            </div>
+
+            <h3>Stars and Bars</h3>
+            <p>A technique for counting ways to distribute identical objects into distinct groups.</p>
+
+            <div class="problem">
+                <div class="problem-header">
+                    <strong>Example 10:</strong>
+                    <span class="problem-difficulty difficulty-hard">Hard</span>
+                </div>
+                <div class="problem-question">
+                    How many 4-digit numbers contain at least one 5?
+                </div>
+                <div class="solution">
+                    <div class="solution-header">
+                        <span class="arrow">▶</span> Show Solution
+                    </div>
+                    <div class="solution-content hidden">
+                        <p><strong>Using Complementary Counting:</strong></p>
+
+                        <p><strong>Step 1:</strong> Count total 4-digit numbers</p>
+                        <p class="formula">First digit: 1-9 (9 choices)</p>
+                        <p class="formula">Other digits: 0-9 (10 choices each)</p>
+                        <p class="formula">Total = 9 × 10 × 10 × 10 = 9000</p>
+
+                        <p><strong>Step 2:</strong> Count 4-digit numbers with NO 5</p>
+                        <p class="formula">First digit: 1-4, 6-9 (8 choices)</p>
+                        <p class="formula">Other digits: 0-4, 6-9 (9 choices each)</p>
+                        <p class="formula">No 5's = 8 × 9 × 9 × 9 = 5832</p>
+
+                        <p><strong>Step 3:</strong> Subtract</p>
+                        <p class="formula">At least one 5 = 9000 - 5832 = 3168</p>
+
+                        <p><strong>Answer:</strong> 3168 four-digit numbers</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2>MathCounts-Specific Tips</h2>
+
+            <div class="card-grid">
+                <div class="info-box tip">
+                    <h4>Problem-Solving Strategies</h4>
+                    <ul>
+                        <li>Draw tree diagrams for complex problems</li>
+                        <li>Use complementary counting when appropriate</li>
+                        <li>Check if order matters (permutation vs combination)</li>
+                        <li>Verify answer makes sense (can't exceed total outcomes)</li>
+                    </ul>
+                </div>
+
+                <div class="info-box important">
+                    <h4>Key Formulas to Memorize</h4>
+                    <ul>
+                        <li>P(n,r) = n!/(n-r)!</li>
+                        <li>C(n,r) = n!/[r!(n-r)!]</li>
+                        <li>P(A and B) = P(A) × P(B) for independent events</li>
+                        <li>P(A or B) = P(A) + P(B) for mutually exclusive events</li>
+                    </ul>
+                </div>
+
+                <div class="info-box warning">
+                    <h4>Common Mistakes</h4>
+                    <ul>
+                        <li>Confusing permutations and combinations</li>
+                        <li>Forgetting to account for replacement/no replacement</li>
+                        <li>Adding probabilities that aren't mutually exclusive</li>
+                        <li>Miscounting total outcomes</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2>Practice Problems</h2>
+            <p>For more counting and probability practice problems organized by difficulty, visit our <a href="../practice/index.html">Practice Problems</a> section.</p>
+            <a href="../practice/index.html" class="btn btn-success">Go to Practice Problems</a>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 MathCounts Study Guide</p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

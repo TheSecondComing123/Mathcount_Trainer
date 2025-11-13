@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Theory - MathCounts Study Guide</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="../index.html" class="logo">MathCounts Study Guide</a>
+            <button class="menu-toggle">☰</button>
+            <ul class="nav-menu">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../index.html#topics">Topics</a></li>
+                <li><a href="../index.html#contests">Contest Formats</a></li>
+                <li><a href="../strategies/index.html">Strategies</a></li>
+                <li><a href="../practice/index.html">Practice</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="breadcrumb">
+            <a href="../index.html">Home</a> <span>→</span>
+            <a href="../index.html#topics">Topics</a> <span>→</span>
+            <span>Number Theory</span>
+        </div>
+
+        <section class="content-section">
+            <h2>Number Theory</h2>
+            <p>Number Theory is fundamental to MathCounts success, appearing in 15-20% of problems. It focuses on properties and relationships of integers, divisibility, prime numbers, and modular arithmetic.</p>
+        </section>
+
+        <section class="content-section">
+            <h2>Prime Numbers</h2>
+
+            <h3>Definition</h3>
+            <p>A prime number is a natural number greater than 1 that has exactly two distinct divisors: 1 and itself.</p>
+
+            <div class="info-box tip">
+                <h4>Memorize Primes up to 200!</h4>
+                <p>This will save you significant time in competitions:</p>
+                <p><strong>Primes up to 100:</strong> 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97</p>
+                <p><strong>Primes 100-200:</strong> 101, 103, 107, 109, 113, 127, 131, 137, 139, 149, 151, 157, 163, 167, 173, 179, 181, 191, 193, 197, 199</p>
+            </div>
+
+            <h3>Prime Factorization</h3>
+            <p>Every integer greater than 1 can be expressed uniquely as a product of prime numbers.</p>
+
+            <div class="problem">
+                <div class="problem-header">
+                    <strong>Example 1:</strong>
+                    <span class="problem-difficulty difficulty-easy">Easy</span>
+                </div>
+                <div class="problem-question">
+                    Find the prime factorization of 180.
+                </div>
+                <div class="solution">
+                    <div class="solution-header">
+                        <span class="arrow">▶</span> Show Solution
+                    </div>
+                    <div class="solution-content hidden">
+                        <p><strong>Method: Factor Tree</strong></p>
+
+                        <p><strong>Step 1:</strong> Start with the smallest prime, 2</p>
+                        <p class="formula">180 = 2 × 90</p>
+
+                        <p><strong>Step 2:</strong> Continue factoring</p>
+                        <p class="formula">90 = 2 × 45</p>
+                        <p class="formula">45 = 3 × 15</p>
+                        <p class="formula">15 = 3 × 5</p>
+
+                        <p><strong>Step 3:</strong> Write in exponential form</p>
+                        <p class="formula">180 = 2² × 3² × 5</p>
+
+                        <p><strong>Answer:</strong> 180 = 2² × 3² × 5</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2>Divisibility Rules</h2>
+
+            <p>Mastering divisibility rules allows for quick mental calculations:</p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Divisor</th>
+                        <th>Rule</th>
+                        <th>Example</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>2</td>
+                        <td>Last digit is even (0, 2, 4, 6, 8)</td>
+                        <td>1234 is divisible by 2 (ends in 4)</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Sum of digits is divisible by 3</td>
+                        <td>123: 1+2+3=6, divisible by 3 ✓</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Last two digits form a number divisible by 4</td>
+                        <td>1324: 24 is divisible by 4 ✓</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Last digit is 0 or 5</td>
+                        <td>1235 ends in 5 ✓</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>Divisible by both 2 and 3</td>
+                        <td>126: even and 1+2+6=9 ✓</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>Last three digits form a number divisible by 8</td>
+                        <td>1000: 000 is divisible by 8 ✓</td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>Sum of digits is divisible by 9</td>
+                        <td>729: 7+2+9=18, divisible by 9 ✓</td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td>Last digit is 0</td>
+                        <td>1230 ends in 0 ✓</td>
+                    </tr>
+                    <tr>
+                        <td>11</td>
+                        <td>Alternating sum of digits is divisible by 11</td>
+                        <td>121: 1-2+1=0, divisible by 11 ✓</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="problem">
+                <div class="problem-header">
+                    <strong>Example 2:</strong>
+                    <span class="problem-difficulty difficulty-easy">Easy</span>
+                </div>
+                <div class="problem-question">
+                    Is 2,346 divisible by 6?
+                </div>
+                <div class="solution">
+                    <div class="solution-header">
+                        <span class="arrow">▶</span> Show Solution
+                    </div>
+                    <div class="solution-content hidden">
+                        <p><strong>A number is divisible by 6 if it's divisible by both 2 and 3</strong></p>
+
+                        <p><strong>Check divisibility by 2:</strong></p>
+                        <p>Last digit is 6 (even) → Divisible by 2 ✓</p>
+
+                        <p><strong>Check divisibility by 3:</strong></p>
+                        <p>Sum of digits: 2 + 3 + 4 + 6 = 15</p>
+                        <p>15 is divisible by 3 ✓</p>
+
+                        <p><strong>Answer:</strong> Yes, 2,346 is divisible by 6</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2>Greatest Common Divisor (GCD) and Least Common Multiple (LCM)</h2>
+
+            <h3>GCD (Greatest Common Divisor)</h3>
+            <p>The largest positive integer that divides both numbers without a remainder.</p>
+
+            <h3>LCM (Least Common Multiple)</h3>
+            <p>The smallest positive integer that is divisible by both numbers.</p>
+
+            <div class="info-box note">
+                <h4>Important Relationship</h4>
+                <div class="formula">
+                    GCD(a, b) × LCM(a, b) = a × b
+                </div>
+            </div>
+
+            <h3>Methods to Find GCD</h3>
+
+            <h4>Method 1: Prime Factorization</h4>
+            <div class="problem">
+                <div class="problem-header">
+                    <strong>Example 3:</strong>
+                    <span class="problem-difficulty difficulty-medium">Medium</span>
+                </div>
+                <div class="problem-question">
+                    Find GCD(48, 60).
+                </div>
+                <div class="solution">
+                    <div class="solution-header">
+                        <span class="arrow">▶</span> Show Solution
+                    </div>
+                    <div class="solution-content hidden">
+                        <p><strong>Step 1:</strong> Prime factorization</p>
+                        <p class="formula">48 = 2⁴ × 3</p>
+                        <p class="formula">60 = 2² × 3 × 5</p>
+
+                        <p><strong>Step 2:</strong> Take the lowest power of each common prime</p>
+                        <p class="formula">Common primes: 2 and 3</p>
+                        <p class="formula">Lowest power of 2: 2²</p>
+                        <p class="formula">Lowest power of 3: 3¹</p>
+
+                        <p><strong>Step 3:</strong> Multiply</p>
+                        <p class="formula">GCD = 2² × 3 = 4 × 3 = 12</p>
+
+                        <p><strong>Answer:</strong> GCD(48, 60) = 12</p>
+                    </div>
+                </div>
+            </div>
+
+            <h4>Method 2: Euclidean Algorithm</h4>
+            <p>Repeatedly divide and take remainders until you reach 0.</p>
+
+            <div class="problem">
+                <div class="problem-header">
+                    <strong>Example 4:</strong>
+                    <span class="problem-difficulty difficulty-medium">Medium</span>
+                </div>
+                <div class="problem-question">
+                    Find GCD(252, 105) using the Euclidean Algorithm.
+                </div>
+                <div class="solution">
+                    <div class="solution-header">
+                        <span class="arrow">▶</span> Show Solution
+                    </div>
+                    <div class="solution-content hidden">
+                        <p><strong>Euclidean Algorithm: GCD(a,b) = GCD(b, a mod b)</strong></p>
+
+                        <p><strong>Step 1:</strong> 252 ÷ 105 = 2 remainder 42</p>
+                        <p class="formula">GCD(252, 105) = GCD(105, 42)</p>
+
+                        <p><strong>Step 2:</strong> 105 ÷ 42 = 2 remainder 21</p>
+                        <p class="formula">GCD(105, 42) = GCD(42, 21)</p>
+
+                        <p><strong>Step 3:</strong> 42 ÷ 21 = 2 remainder 0</p>
+                        <p class="formula">GCD(42, 21) = 21</p>
+
+                        <p><strong>Answer:</strong> GCD(252, 105) = 21</p>
+                    </div>
+                </div>
+            </div>
+
+            <h3>Finding LCM</h3>
+            <div class="problem">
+                <div class="problem-header">
+                    <strong>Example 5:</strong>
+                    <span class="problem-difficulty difficulty-medium">Medium</span>
+                </div>
+                <div class="problem-question">
+                    Find LCM(12, 18).
+                </div>
+                <div class="solution">
+                    <div class="solution-header">
+                        <span class="arrow">▶</span> Show Solution
+                    </div>
+                    <div class="solution-content hidden">
+                        <p><strong>Method 1: Prime Factorization</strong></p>
+                        <p class="formula">12 = 2² × 3</p>
+                        <p class="formula">18 = 2 × 3²</p>
+                        <p>Take the highest power of each prime:</p>
+                        <p class="formula">LCM = 2² × 3² = 4 × 9 = 36</p>
+
+                        <p><strong>Method 2: Using GCD</strong></p>
+                        <p class="formula">GCD(12, 18) = 6</p>
+                        <p class="formula">LCM = (12 × 18) / GCD = 216 / 6 = 36</p>
+
+                        <p><strong>Answer:</strong> LCM(12, 18) = 36</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2>Modular Arithmetic</h2>
+
+            <h3>Definition</h3>
+            <p>"a ≡ b (mod m)" means a and b have the same remainder when divided by m.</p>
+
+            <div class="formula">
+                a ≡ b (mod m) if and only if m divides (a - b)
+            </div>
+
+            <h3>Properties of Modular Arithmetic</h3>
+            <ul class="styled-list">
+                <li>If a ≡ b (mod m) and c ≡ d (mod m), then a + c ≡ b + d (mod m)</li>
+                <li>If a ≡ b (mod m) and c ≡ d (mod m), then a × c ≡ b × d (mod m)</li>
+                <li>a^n ≡ b^n (mod m) if a ≡ b (mod m)</li>
+            </ul>
+
+            <div class="problem">
+                <div class="problem-header">
+                    <strong>Example 6:</strong>
+                    <span class="problem-difficulty difficulty-medium">Medium</span>
+                </div>
+                <div class="problem-question">
+                    What is the remainder when 2^10 is divided by 7?
+                </div>
+                <div class="solution">
+                    <div class="solution-header">
+                        <span class="arrow">▶</span> Show Solution
+                    </div>
+                    <div class="solution-content hidden">
+                        <p><strong>Find a pattern in powers of 2 (mod 7):</strong></p>
+
+                        <p class="formula">2¹ ≡ 2 (mod 7)</p>
+                        <p class="formula">2² ≡ 4 (mod 7)</p>
+                        <p class="formula">2³ ≡ 8 ≡ 1 (mod 7)</p>
+
+                        <p><strong>Pattern repeats every 3 powers!</strong></p>
+
+                        <p><strong>Step 1:</strong> Divide exponent by 3</p>
+                        <p class="formula">10 = 3 × 3 + 1</p>
+
+                        <p><strong>Step 2:</strong> Use the pattern</p>
+                        <p class="formula">2^10 = (2³)³ × 2¹ ≡ 1³ × 2 ≡ 2 (mod 7)</p>
+
+                        <p><strong>Answer:</strong> Remainder is 2</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2>Special Number Properties</h2>
+
+            <h3>Perfect Squares</h3>
+            <p>Numbers that are squares of integers.</p>
+
+            <div class="info-box tip">
+                <h4>Memorize Perfect Squares!</h4>
+                <ul>
+                    <li>1² = 1, 2² = 4, 3² = 9, 4² = 16, 5² = 25</li>
+                    <li>6² = 36, 7² = 49, 8² = 64, 9² = 81, 10² = 100</li>
+                    <li>11² = 121, 12² = 144, 13² = 169, 14² = 196, 15² = 225</li>
+                    <li>16² = 256, 17² = 289, 18² = 324, 19² = 361, 20² = 400</li>
+                    <li>25² = 625, 30² = 900</li>
+                </ul>
+            </div>
+
+            <h3>Number of Divisors Formula</h3>
+            <p>If n = p₁^a₁ × p₂^a₂ × ... × pₖ^aₖ, then:</p>
+            <div class="formula">
+                Number of divisors = (a₁ + 1)(a₂ + 1)...(aₖ + 1)
+            </div>
+
+            <div class="problem">
+                <div class="problem-header">
+                    <strong>Example 7:</strong>
+                    <span class="problem-difficulty difficulty-hard">Hard</span>
+                </div>
+                <div class="problem-question">
+                    How many positive divisors does 360 have?
+                </div>
+                <div class="solution">
+                    <div class="solution-header">
+                        <span class="arrow">▶</span> Show Solution
+                    </div>
+                    <div class="solution-content hidden">
+                        <p><strong>Step 1:</strong> Prime factorization of 360</p>
+                        <p class="formula">360 = 2³ × 3² × 5¹</p>
+
+                        <p><strong>Step 2:</strong> Apply the formula</p>
+                        <p class="formula">Number of divisors = (3+1)(2+1)(1+1)</p>
+                        <p class="formula">= 4 × 3 × 2</p>
+                        <p class="formula">= 24</p>
+
+                        <p><strong>Answer:</strong> 360 has 24 positive divisors</p>
+                    </div>
+                </div>
+            </div>
+
+            <h3>Sum of Divisors Formula</h3>
+            <p>If n = p₁^a₁ × p₂^a₂ × ... × pₖ^aₖ, then:</p>
+            <div class="formula">
+                Sum of divisors = [(p₁^(a₁+1) - 1)/(p₁ - 1)] × [(p₂^(a₂+1) - 1)/(p₂ - 1)] × ...
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2>Units Digit Patterns</h2>
+
+            <p>Understanding units digit patterns helps solve large exponent problems quickly.</p>
+
+            <div class="info-box note">
+                <h4>Units Digit Cycles</h4>
+                <ul>
+                    <li><strong>2:</strong> 2, 4, 8, 6, 2... (cycle of 4)</li>
+                    <li><strong>3:</strong> 3, 9, 7, 1, 3... (cycle of 4)</li>
+                    <li><strong>4:</strong> 4, 6, 4, 6... (cycle of 2)</li>
+                    <li><strong>7:</strong> 7, 9, 3, 1, 7... (cycle of 4)</li>
+                    <li><strong>8:</strong> 8, 4, 2, 6, 8... (cycle of 4)</li>
+                    <li><strong>9:</strong> 9, 1, 9, 1... (cycle of 2)</li>
+                </ul>
+            </div>
+
+            <div class="problem">
+                <div class="problem-header">
+                    <strong>Example 8:</strong>
+                    <span class="problem-difficulty difficulty-medium">Medium</span>
+                </div>
+                <div class="problem-question">
+                    What is the units digit of 7^2025?
+                </div>
+                <div class="solution">
+                    <div class="solution-header">
+                        <span class="arrow">▶</span> Show Solution
+                    </div>
+                    <div class="solution-content hidden">
+                        <p><strong>Step 1:</strong> Find the pattern for 7</p>
+                        <p class="formula">7¹ ends in 7</p>
+                        <p class="formula">7² ends in 9</p>
+                        <p class="formula">7³ ends in 3</p>
+                        <p class="formula">7⁴ ends in 1</p>
+                        <p class="formula">7⁵ ends in 7 (pattern repeats)</p>
+
+                        <p><strong>Step 2:</strong> The cycle length is 4</p>
+                        <p>Divide 2025 by 4: 2025 = 4 × 506 + 1</p>
+
+                        <p><strong>Step 3:</strong> The remainder is 1</p>
+                        <p>So 7^2025 has the same units digit as 7^1</p>
+
+                        <p><strong>Answer:</strong> The units digit is 7</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2>MathCounts-Specific Number Theory Tips</h2>
+
+            <div class="card-grid">
+                <div class="info-box tip">
+                    <h4>Quick Strategies</h4>
+                    <ul>
+                        <li>Memorize primes up to 200</li>
+                        <li>Know divisibility rules cold</li>
+                        <li>Practice Euclidean algorithm for speed</li>
+                        <li>Recognize units digit patterns</li>
+                    </ul>
+                </div>
+
+                <div class="info-box important">
+                    <h4>Common Techniques</h4>
+                    <ul>
+                        <li>Use prime factorization for GCD/LCM problems</li>
+                        <li>Look for patterns in modular arithmetic</li>
+                        <li>Apply divisibility rules to eliminate answers</li>
+                        <li>Check units digit for reasonableness</li>
+                    </ul>
+                </div>
+
+                <div class="info-box warning">
+                    <h4>Avoid These Mistakes</h4>
+                    <ul>
+                        <li>Confusing GCD and LCM</li>
+                        <li>Missing 1 as a factor/divisor</li>
+                        <li>Incomplete prime factorizations</li>
+                        <li>Sign errors in modular arithmetic</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2>Practice Problems</h2>
+            <p>For more number theory practice problems organized by difficulty, visit our <a href="../practice/index.html">Practice Problems</a> section.</p>
+            <a href="../practice/index.html" class="btn btn-success">Go to Practice Problems</a>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 MathCounts Study Guide</p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
